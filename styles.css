@@ -1,0 +1,117 @@
+body {
+  background-color: rgb(93, 209, 233);
+  display: flex;
+  height: 100vh;
+    align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.water-goal {
+   
+    font-weight: bold;
+    font-size: 1.5rem;
+  height: 24rem;
+  width: 10rem;
+  border-radius: 0 0 2rem 2rem;
+  border: 5px solid rgb(0, 55, 101);
+  overflow: hidden ;
+
+}
+
+.water-picker {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.little-botle {
+    overflow: hidden;
+  color: rgb(0, 55, 101);
+  text-wrap: pretty;
+  height: 5rem;
+  width: 3rem;
+  background-color: rgb(218, 243, 255);
+  border-radius: 0 0 1rem 1rem;
+  border: 5px solid rgb(0, 55, 101);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.little-botle :first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.little-botle :nth-child(2) {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.little-botle--active{
+    background-color: rgb(0, 122, 159);
+    color: white;
+    transition: .3s;
+
+}
+
+.drinked{
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 122, 159);
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.for-drink{
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 55, 101);
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    font-weight:200;
+    width: 50%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.water-hover{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 122, 159);
+    position: absolute ;
+   bottom: -100%;
+
+}
+
+.little-botle:hover > .water-hover{
+    bottom: 0;
+    transition: .2s;
+}
+
