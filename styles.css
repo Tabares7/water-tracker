@@ -3,6 +3,7 @@ body {
   display: flex;
   height: 100vh;
     align-items: center;
+    justify-content: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 main {
@@ -65,7 +66,6 @@ main {
 }
 
 .drinked{
-    padding: 1rem;
     text-align: center;
     color: white;
     background-color: rgb(0, 122, 159);
@@ -101,17 +101,4 @@ main {
     gap: 1rem;
 }
 
-.water-hover{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(0, 122, 159);
-    position: absolute ;
-   bottom: -100%;
-
-}
-
-.little-botle:hover > .water-hover{
-    bottom: 0;
-    transition: .2s;
-}
 
