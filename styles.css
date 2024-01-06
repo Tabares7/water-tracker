@@ -23,6 +23,30 @@ header {
   color: white;
 }
 
+.wave{
+    width: 150%;
+    position: absolute;
+    top: -50px;
+    animation: waveAnimation 3s ease-in-out infinite;
+}
+
+.w1{
+    animation-delay: 1s;
+}
+
+@keyframes waveAnimation {
+    0% {
+      transform: translateX(-20);
+    }
+    50% {
+      transform: translateX(30px); /* Mover a la derecha */
+    }
+    100% {
+      transform: translateX(20); /* Vuelve a la posición inicial */
+    }
+  }
+  
+
 header :first-child{
     margin-bottom: 0;
     font-size: 1.5rem;
@@ -80,6 +104,7 @@ header :first-child{
 }
 
 .drinked{
+    position: relative;
     text-align: center;
     color: white;
     background-color: #69b4f8;
