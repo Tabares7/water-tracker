@@ -25,18 +25,22 @@ header {
 
 .wave{
     width: 150%;
+    height: 50px;
     position: absolute;
     top: -50px;
-    animation: waveAnimation 3s ease-in-out infinite;
+    animation: waveAnimation 2s ease-in-out infinite;
 }
 
 .w1{
+    top:    -49px;
     animation-delay: 1s;
 }
 
+
+
 @keyframes waveAnimation {
     0% {
-      transform: translateX(-20);
+      transform: translateX(-30);
     }
     50% {
       transform: translateX(30px); /* Mover a la derecha */
@@ -123,6 +127,12 @@ header :first-child{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.for-drink :first-child{
+    position: absolute;
+    z-index: 10;
 }
 
 .text{
